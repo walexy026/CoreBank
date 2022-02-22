@@ -1,1 +1,14 @@
-@import "color";
+@import './modules/color';
+@import './modules/font';
+@import './modules/mixin';
+@import './modules/mobile';
+@import './modules/reset';
+@import './modules/variable';
+
+.header1{
+    display: flex;
+    justify-content: space-around;
+    background-color:$bg1;
+    // display: inline-block;
+    
+}
