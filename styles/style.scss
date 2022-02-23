@@ -8,15 +8,14 @@
 .header1 {
     padding-top: 10px;
     padding-bottom: -5px;
-   display: flex;
-   justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
     background-color: $bg1;
     @include VW;
     .hd1 {
         display: flex;
         font-family: $ff;
         gap: $smallspace;
-        
     }
     .hd2 {
         display: flex;
@@ -29,23 +28,46 @@
     background-color: $bg2;
     align-items: center;
 
-
-    a{
-        color: $bg5;
-        // align-items: center;
-    }
     
-    .btn{
+
+    a {
+        color: $bg5;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        align-items: center;
+    }
+
+    .btn {
         align-items: center;
         background: $bg3;
-        border: none;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
+        padding: 1vw 1vw;
         text-decoration: none;
-        font-size: 16px;
-        margin: 4px 2px;
+        // font-size: 10px;
         cursor: pointer;
         border-radius: 5px;
+        color: aliceblue;
+
+        .btn:hover{
+            color: aliceblue;
+        }
     }
+    .hd3{
+        display: flex;
+        align-items: center;
+        color: $bg5;
+        gap: $smallspace;
+        font-family: $ff;
+
+    }
+}
+.sec1 {
+    // height: 45%;
+    background-image: url(/styles/img/manLaptop.svg);
+    height: 400px;
+    background-size: cover;
+    background-position: top center;
+    @include VW;
+    padding-top: 100px;
+    
 }
