@@ -2,6 +2,15 @@
   .none_m {
     display: none;
   }
+  .btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .none_d {
+    display: none;
+  }
 }
 
 * {
@@ -18,7 +27,7 @@ a {
   font-size: small;
 }
 
-.header1 {
+.header1, .header2 {
   padding-top: 10px;
   padding-bottom: -5px;
   display: -webkit-box;
@@ -32,7 +41,7 @@ a {
   padding-right: 3vw;
 }
 
-.header1 .hd1 {
+.header1 .hd1, .header2 .hd1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,11 +49,39 @@ a {
   gap: 10px;
 }
 
-.header1 .hd2 {
+.header1 .hd2, .header2 .hd2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
   font-family: "Poppins", sans-serif;
+}
+
+.header2 {
+  background-color: #FFFFFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header2 a {
+  color: #12082D;
+}
+
+.header2 .btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 155, 17, 0.5)), to(#40555880));
+  background: linear-gradient(180deg, rgba(239, 155, 17, 0.5) 0%, #40555880 100%);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=style.css.map */

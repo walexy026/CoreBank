@@ -2,4 +2,20 @@
     .none_m{
         display: none;
     }
+    .btn{
+        display: none;
+    }
   }
+  @media screen and (min-width: 780px){
+    .none_d{
+        display: none;
+    }
+  }
+      
+//   @media screen and (max-width: 780px){
+//     .btn{
+//         display: none;
+//     }
+//   }
+      
+  
