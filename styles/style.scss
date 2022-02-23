@@ -1,14 +1,26 @@
-@import './modules/color';
-@import './modules/font';
-@import './modules/mixin';
-@import './modules/mobile';
-@import './modules/reset';
-@import './modules/variable';
+@import "./modules/color";
+@import "./modules/font";
+@import "./modules/mixin";
+@import "./modules/mobile";
+@import "./modules/reset";
+@import "./modules/variable";
 
-.header1{
-    display: flex;
-    justify-content: space-around;
-    background-color:$bg1;
-    // display: inline-block;
-    
+.header1 {
+    padding-top: 10px;
+    padding-bottom: -5px;
+   display: flex;
+   justify-content: space-between;
+    background-color: $bg1;
+    @include VW;
+    .hd1 {
+        display: flex;
+        font-family: $ff;
+        gap: $smallspace;
+        
+    }
+    .hd2 {
+        display: flex;
+        gap: $smallspace;
+        font-family: $ff;
+    }
 }
