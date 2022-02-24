@@ -28,8 +28,6 @@
     background-color: $bg2;
     align-items: center;
 
-    
-
     a {
         color: $bg5;
         font-style: normal;
@@ -41,33 +39,67 @@
     .btn {
         align-items: center;
         background: $bg3;
-        padding: 1vw 1vw;
-        text-decoration: none;
-        // font-size: 10px;
+        // padding: 1vw 1vw;
+        // text-decoration: none;
         cursor: pointer;
         border-radius: 5px;
-        color: aliceblue;
+        width: 10vw;
+        text-align: center;
 
-        .btn:hover{
-            color: aliceblue;
+        .btn:hover {
+            color: #fff;
+            background-color: #fff;
         }
     }
-    .hd3{
+    .hd3 {
         display: flex;
         align-items: center;
         color: $bg5;
         gap: $smallspace;
         font-family: $ff;
-
     }
 }
 .sec1 {
-    // height: 45%;
     background-image: url(/styles/img/manLaptop.svg);
-    height: 400px;
+    // height: 400px;
     background-size: cover;
     background-position: top center;
-    @include VW;
-    padding-top: 100px;
-    
+    width: 100%;
+    padding-top: 50vw;
+    h1 {
+        font-family: $ff;
+        margin-top: -122px;
+        font-size: 8vw;
+        //     line-height: 10vw;
+        // padding-bottom: 100px;
+        //     // line-height: 4px;
+        padding: 2px 92px 5px 20px;
+        // align-items: center;
+    }
+    p {
+        //     font-size: 20px;
+        //     width: 60vw;
+        //     font-weight: 400;
+        //     padding-bottom: 20px;
+        padding-left: $padding;
+        //     align-items: center;
+    }
+    }
+    .services {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        background-image: url(/styles/img/bg2.svg);
+        background-size: cover;
+        width: 100%;
+        background-position: top center;
+        gap: $smallspace;
+
+        .sec2 {
+            width: 15vw;
+            height: 20vh;
+            // background: #ffffff;
+            box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+            padding-left: 2vw;
+        }
 }
