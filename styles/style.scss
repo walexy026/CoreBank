@@ -59,127 +59,120 @@
         font-family: $ff;
     }
 }
-.sec1 {
+article {
     background-image: url(/styles/img/manLaptop.svg);
-    // height: 400px;
+    height: 60vw;
     background-size: cover;
-    background-position: top center;
+    background-repeat: no-repeat;
     width: 100%;
-    padding-top: 50vw;
-    div {
-        margin-top: -50px;
-    }
-    h1 {
-        // font-family: $ff;
-        margin-top: -122px;
-        font-size: 8vw;
-        //     line-height: 10vw;
-        // padding-bottom: 100px;
-        //     // line-height: 4px;
-        padding: 2px 92px 5px 20px;
-        // align-items: center;
-        @media screen and (min-width: 425px) {
-            padding: 2px 32% 5px 20px;
+    padding: 1em;
+
+    @media screen and (min-width: 500px) {
+        div {
+            height: 375px;
+            padding-top: 15vh;
         }
-    }
-    p {
-        //     font-size: 20px;
-        //     width: 60vw;
-        //     font-weight: 400;
-        //     padding-bottom: 20px;
-        padding-left: $padding;
-        //     align-items: center;
-        @media screen and (min-width: 425px) {
-            padding: 2px 54% 5px 20px;
-            font-size: 3vw;
-        }
+       
     }
 }
 .services {
-    padding-left: $padding;
+    // padding-left: $padding;
     width: 100%;
     // justify-content: space-around;
     background-image: url(/styles/img/bg2.svg);
     background-size: cover;
-    background-position: top center;
+    // background-position: top center;
+    background-repeat: no-repeat;
 
     .sec11 {
         display: flex;
         justify-content: center;
+        gap: 10px;
         // width: 100%;
     }
     .sec2 {
         width: 15vw;
         height: 20vh;
-        box-shadow: 0px 6px 6px rgba(0, 1, 2, 3.5);
+        box-shadow: 0px 6px 6px rgba(0, 1, 2, 2.5);
         padding-left: 2vw;
         padding-top: 4vh;
     }
     .sec111 {
         display: flex;
-        // padding-left: $padding;
-        padding-top: 5vh;
+        padding-left: $padding;
+        padding-top: 10vh;
     }
     h4 {
-        padding-left: 1vw;
-        font-family: $ff;
+        padding-left: $padding
+        font-family $ff;
         font-weight: bolder;
+        font-size: 15px;
     }
     h2 {
-        font-size: 50px;
+        font-size: 30px;
         font-family: $ff;
+        font-weight: bolder;
+        padding-left: $padding
     }
     .sec3 {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
+         display: flex;
+         width: 100%;
+        justify-content: space-evenly;
+        gap: 10px;
     }
     .sec31 {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
+        border-radius: 5px;
     }
     .rec {
         display: block;
         width: 100%;
         text-align: center;
+        padding-top: 3vh;
     }
 }
 .sec4 {
     width: 100%;
     background-image: $bg3;
     display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-left: $padding;
 
     span {
-        padding-top: 2vh;
+        padding-top: 5vh;
         display: flex;
-        gap: 1vw;
+        gap: 3vw;
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
-    }
-    h2 {
-        font-family: $ff;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 56px;
-    }
-    h4 {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 40px;
+        // font-size: 12px;
+        h2 {
+            font-family: $ff;
+            font-style: normal;
+            font-weight: bolder;
+            font-size: 10px;
+        }
+        h4 {
+            font-style: normal;
+            font-weight: bolder;
+            font-size: 15px;
+            // line-height: 40px;
+        }
     }
     .btn1 {
         padding-bottom: 5vh;
+        font-size: 20px;
     }
     .btn1 > button {
         background: linear-gradient(180deg, #ef9b11 0%, #405558 100%);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-        width: 18vw;
+        border-radius: 5px;
+        // width: 18vw;
         color: #fff;
         height: 5vh;
+        font-family: $ff;
+        
+
     }
     .btn1 :nth-child(2) {
         border: 2px solid #ffffff;
@@ -187,6 +180,27 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 10px;
         color: #fff;
-        background: transparent
+        background: transparent;
+        font-family: $ff;
+    }
+}
+.download {
+    display: flex;
+    background-image: url(/styles/img/bg3.svg);
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    .andriod {
+        align-self: center;
+
+        h6 {
+            color: #eab221;
+            font-family: $ff;
+            font-size: small;
+        }
+        h2 {
+            font-family: $ff;
+            font-size: small;
+        }
     }
 }

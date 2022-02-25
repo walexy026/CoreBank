@@ -4,3 +4,34 @@
     padding: 0;
 
 }
+h1{
+    font: {
+        size: 20px;
+        weight: 600;
+        family: $ff;
+    }
+    @media screen and (min-width: 500px) {
+        font-size: 25px;
+    }
+    @media screen and (min-width: 600px) {
+        font-size: 30px;
+    }
+    @media screen and (min-width: 900px) {
+        font-size: 54px;
+    }
+}
+p{
+    width: 69vw;
+    font: {
+        size: 14px;
+        weight: 500;
+        family: $ff;
+    }
+    @media screen and (min-width: 500px) {
+        font-size: 16px;
+    }
+    @media screen and (min-width: 900px) {
+        font-size: 18px;
+        width: 54vw;
+    }
+}
