@@ -40,6 +40,15 @@
   }
 }
 
+@media screen and (max-width: 780px) {
+  .store {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -336,12 +345,21 @@ article {
   background-size: cover;
   background-position: top center;
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10vw;
+}
+
+.download :nth-child(1) {
+  padding-top: 5vh;
 }
 
 .download .andriod {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  padding-left: 20px;
 }
 
 .download .andriod h6 {
@@ -353,5 +371,33 @@ article {
 .download .andriod h2 {
   font-family: "Poppins", sans-serif;
   font-size: small;
+}
+
+.download .andriod .store {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.download .andriod .store :nth-child(2) {
+  padding-top: 5vh;
+}
+
+.sec5 {
+  background: rgba(255, 187, 11, 0.5);
+}
+
+.sec51 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3vw;
+}
+
+.sec51 .sec512 {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */
