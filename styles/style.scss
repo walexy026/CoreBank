@@ -212,16 +212,53 @@ article {
         }
     }
 }
-.sec5{
-
+.sec5 {
     background: rgba(255, 187, 11, 0.5);
+    line-height: 5vh;
+    font-family: $ff;
+
+    .sec50 {
+        display: flex;
+        padding-left: 1em;
+    }
+    .sech4 {
+        padding-left: 13px;
+        font-weight: bold;
+        font-size: 30px;
+        padding-bottom: 5px;
+    }
 }
 .sec51 {
     display: flex;
-    gap: 3vw;
+    gap: 2vw;
     .sec512 {
         background-color: #ffffff;
         box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.05);
         border-radius: 10px;
+        text-align: center;
+        border: 5px;
+        h4 h5 {
+            font-family: $ff;
+        }
+    }
+    .checked {
+        color: #eab221;
+    }
+}
+footer{
+    padding-top: 10vh;
+    padding-left: 1em;
+    background: $bg5;
+    color: #ffffff;
+    display: flex;
+    font-family: $ff;
+    gap: 5vw;
+    .nav0:nth-child(2){
+        background: #eab221;
+
+    }
+    .nav1{
+        list-style: none;
+        line-height: 5vh;
     }
 }
