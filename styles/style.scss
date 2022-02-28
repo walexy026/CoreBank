@@ -246,6 +246,7 @@ article {
     }
 }
 footer{
+    width: 100%;
     padding-top: 10vh;
     padding-left: 1em;
     background: $bg5;
@@ -253,12 +254,15 @@ footer{
     display: flex;
     font-family: $ff;
     gap: 5vw;
-    .nav0:nth-child(2){
-        background: #eab221;
+    // .nav0:nth-child(2){
+    //     background: #eab221;
 
-    }
+    // }
     .nav1{
         list-style: none;
         line-height: 5vh;
+        :nth-child(1){
+            color: #eab221;
+        }
     }
 }

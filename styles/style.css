@@ -50,8 +50,11 @@
 }
 
 @media screen and (max-width: 780px) {
-  .none_m {
-    display: none;
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -434,6 +437,7 @@ article {
 }
 
 footer {
+  width: 100%;
   padding-top: 10vh;
   padding-left: 1em;
   background: #12082D;
@@ -445,12 +449,12 @@ footer {
   gap: 5vw;
 }
 
-footer .nav0:nth-child(2) {
-  background: #eab221;
-}
-
 footer .nav1 {
   list-style: none;
   line-height: 5vh;
+}
+
+footer .nav1 :nth-child(1) {
+  color: #eab221;
 }
 /*# sourceMappingURL=style.css.map */
